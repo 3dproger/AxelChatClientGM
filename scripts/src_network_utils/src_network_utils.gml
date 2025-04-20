@@ -4,7 +4,7 @@
 /// @param {Struct | Array} struct_or_array	The structure or array that will be converted to JSON and sent to the socket
 /// @param {Bool} prettify			Whether to prettify the JSON, i.e. insert indentation and line breaks for readability
 ///	@return {Bool}					Returns true if successful, otherwise falls
-function network_send_as_json(socket_id, buffer_id, struct_or_array, prettify = false)
+function src_network_utils_send_as_json(socket_id, buffer_id, struct_or_array, prettify = false)
 {
 	if (!is_struct(struct_or_array) && !is_array(struct_or_array))
 	{

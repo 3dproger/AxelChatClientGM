@@ -36,13 +36,14 @@ function src_process_event(json)
 	{
 		for (var i = 0; i < array_length(json.data.messages); i++)
 		{
-			o_display.console_text += parse_message(json.data.messages[i]) + "\n";
+			var message = json.data.messages[i];
+			o_display.console_text += parse_message(message) + "\n";
 		}
 	}
 	else if (type == "MESSAGES_SELECTED" ||
 			 type == "SETTINGS_UPDATED")
 	{
-		// not implemented
+		// TODO: Not implemented
 	}
 	else
 	{
@@ -50,35 +51,12 @@ function src_process_event(json)
 	}
 }
 
-function parse_message(json)
+function parse_message(message)
 {
-	var result = "[" + json.author.serviceId + "] " + json.author.name + ": ";
+	var author = axelchat_message_get_author(message);
+	var result = "[" + axelchat_user_get_service_id(author) + "] " + axelchat_user_get_name(author) + ": ";
 	
-	for (var i = 0; i < array_length(json.contents); i++)
-	{
-		var content = json.contents[i];
-		var type = content.type;
-		if (type == "text")
-		{
-			result += content.data.text;
-		}
-		else if (type == "hyperlink")
-		{
-			result += content.data.text;
-		}
-		else if (type == "image")
-		{
-			result += "[IMAGE]";
-		}
-		else if (type == "html")
-		{
-			result += "[HTML]";
-		}
-		else
-		{
-			show_debug_message("Unknown content type \"" + type + "\"");
-		}
-	}
-	
+	result += axelchat_message_get_contents_as_text(message);
+
 	return result;
 }

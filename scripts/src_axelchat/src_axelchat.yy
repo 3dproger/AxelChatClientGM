@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"src_axelchat",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"src_axelchat",
+  "parent":{
+    "name":"Scripts",
+    "path":"folders/Scripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

@@ -2,6 +2,9 @@
   "FolderOrderSettings":[],
   "ResourceOrderSettings":[
     {"name":"o_display","order":1,"path":"objects/o_display/o_display.yy",},
+    {"name":"src_axelchat","order":2,"path":"scripts/src_axelchat/src_axelchat.yy",},
+    {"name":"src_color_utils","order":4,"path":"scripts/src_color_utils/src_color_utils.yy",},
     {"name":"src_network_utils","order":1,"path":"scripts/src_network_utils/src_network_utils.yy",},
+    {"name":"src_string_utils","order":3,"path":"scripts/src_string_utils/src_string_utils.yy",},
   ],
 }

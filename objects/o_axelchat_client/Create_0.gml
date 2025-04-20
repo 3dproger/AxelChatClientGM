@@ -63,7 +63,7 @@ function send_client_info()
 		struct_set(message.data.client.device, "browser", browser);
 	}
 	
-	network_send_as_json(socket, buffer, message);
+	src_network_utils_send_as_json(socket, buffer, message);
 }
 
 // @descriptio The function is used to ask the server if it is available
@@ -73,7 +73,7 @@ function send_ping()
 		type: "PING"
 	};
 	
-	network_send_as_json(socket, buffer, message);
+	src_network_utils_send_as_json(socket, buffer, message);
 }
 
 /// @description The function is used to notify that we are still connected to it
@@ -83,5 +83,5 @@ function send_pong()
 		type: "PONG"
 	};
 	
-	network_send_as_json(socket, buffer, message);
+	src_network_utils_send_as_json(socket, buffer, message);
 }
