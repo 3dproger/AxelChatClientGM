@@ -85,3 +85,62 @@ function send_pong()
 	
 	src_network_utils_send_as_json(socket, buffer, message);
 }
+
+/// @description The function is used to process event from server
+/// @param {String} type Event type
+/// @param {Struct} data Event data
+function process_event(type, data)
+{
+	if (type == "NEW_MESSAGES_RECEIVED")
+	{
+		if (script_exists(on_message_received_script))
+		{
+			var messages = data.messages;
+			for (var i = 0; i < array_length(messages); i++)
+			{
+				var message = messages[i];
+				script_execute(on_message_received_script, message);
+			}
+		}
+		else
+		{
+			show_debug_message("Script for '" + type + "' not exists");
+		}
+	}
+	else if (type == "STATES_CHANGED")
+	{
+		if (script_exists(on_state_changed))
+		{
+			script_execute(on_state_changed, data);
+		}
+		else
+		{
+			show_debug_message("Script for '" + type + "' not exists");
+		}
+	}
+	else if (type == "HELLO")
+	{
+		if (script_exists(on_connected_script))
+		{
+			script_execute(on_connected_script, data);
+		}
+		else
+		{
+			show_debug_message("Script for '" + type + "' not exists");
+		}
+	}
+	else if (type == "MESSAGES_SELECTED" ||
+			 type == "SETTINGS_UPDATED" ||
+			 type == "USER_UPDATED" ||
+			 type == "MESSAGES_CHANGED" ||
+			 type == "MESSAGES_REMOVED" ||
+			 type == "SETTINGS_UPDATED" ||
+			 type == "CLEAR_MESSAGES")
+	{
+		// TODO: Not implemented
+	}
+	else
+	{
+		show_debug_message("Unknwon event type '" + type + "'");
+	}
+}

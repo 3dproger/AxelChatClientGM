@@ -1,9 +1,9 @@
 {
   "$GMScript":"v1",
-  "%Name":"src_on_message_received",
+  "%Name":"src_on_axelchat_connected",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"src_on_message_received",
+  "name":"src_on_axelchat_connected",
   "parent":{
     "name":"Scripts",
     "path":"folders/AxelChat using example/Scripts.yy",

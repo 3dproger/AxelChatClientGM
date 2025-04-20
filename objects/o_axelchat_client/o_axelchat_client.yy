@@ -13,7 +13,7 @@
   "overriddenProperties":[],
   "parent":{
     "name":"Objects",
-    "path":"folders/AxelChat/Objects.yy",
+    "path":"folders/AxelChat client/Objects.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -36,9 +36,15 @@
     {"$GMObjectProperty":"v1","%Name":"client_name","filters":[],"listItems":[],"multiselect":false,"name":"client_name","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"game_display_name","varType":4,},
     {"$GMObjectProperty":"v1","%Name":"client_version","filters":[],"listItems":[],"multiselect":false,"name":"client_version","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"GM_version","varType":4,},
     {"$GMObjectProperty":"v1","%Name":"client_extra_name","filters":[],"listItems":[],"multiselect":false,"name":"client_extra_name","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"AxelChat client","varType":2,},
-    {"$GMObjectProperty":"v1","%Name":"on_received","filters":[
+    {"$GMObjectProperty":"v1","%Name":"on_connected_script","filters":[
         "GMScript",
-      ],"listItems":[],"multiselect":false,"name":"on_received","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resource":{"name":"src_process_event","path":"scripts/src_process_event/src_process_event.yy",},"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"src_process_event","varType":5,},
+      ],"listItems":[],"multiselect":false,"name":"on_connected_script","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resource":{"name":"src_on_axelchat_connected","path":"scripts/src_on_axelchat_connected/src_on_axelchat_connected.yy",},"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"src_on_axelchat_connected","varType":5,},
+    {"$GMObjectProperty":"v1","%Name":"on_state_changed","filters":[
+        "GMScript",
+      ],"listItems":[],"multiselect":false,"name":"on_state_changed","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resource":{"name":"src_on_axelchat_state_changed","path":"scripts/src_on_axelchat_state_changed/src_on_axelchat_state_changed.yy",},"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"src_on_axelchat_state_changed","varType":5,},
+    {"$GMObjectProperty":"v1","%Name":"on_message_received_script","filters":[
+        "GMScript",
+      ],"listItems":[],"multiselect":false,"name":"on_message_received_script","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resource":{"name":"src_on_axelchat_message_received","path":"scripts/src_on_axelchat_message_received/src_on_axelchat_message_received.yy",},"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"src_on_axelchat_message_received","varType":5,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
