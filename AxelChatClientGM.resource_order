@@ -1,0 +1,7 @@
+{
+  "FolderOrderSettings":[],
+  "ResourceOrderSettings":[
+    {"name":"o_display","order":1,"path":"objects/o_display/o_display.yy",},
+    {"name":"src_network_utils","order":1,"path":"scripts/src_network_utils/src_network_utils.yy",},
+  ],
+}
