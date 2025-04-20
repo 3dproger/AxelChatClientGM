@@ -36,6 +36,9 @@
     {"$GMObjectProperty":"v1","%Name":"client_name","filters":[],"listItems":[],"multiselect":false,"name":"client_name","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"game_display_name","varType":4,},
     {"$GMObjectProperty":"v1","%Name":"client_version","filters":[],"listItems":[],"multiselect":false,"name":"client_version","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"GM_version","varType":4,},
     {"$GMObjectProperty":"v1","%Name":"client_extra_name","filters":[],"listItems":[],"multiselect":false,"name":"client_extra_name","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"AxelChat client","varType":2,},
+    {"$GMObjectProperty":"v1","%Name":"on_received","filters":[
+        "GMScript",
+      ],"listItems":[],"multiselect":false,"name":"on_received","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resource":{"name":"src_process_event","path":"scripts/src_process_event/src_process_event.yy",},"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"src_process_event","varType":5,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",

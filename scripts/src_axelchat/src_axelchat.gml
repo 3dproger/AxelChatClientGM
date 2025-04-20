@@ -22,6 +22,14 @@ function axelchat_user_get_name(user)
 	return user.name;
 }
 
+/// @description Get id of user
+/// @param {Struct} user User
+///	@return {String}
+function axelchat_user_get_id(user)
+{
+	return user.id;
+}
+
 /// @description Get avatart URL of user
 /// @param {Struct} user User
 ///	@return {String}
@@ -30,12 +38,42 @@ function axelchat_user_get_avatar_url(user)
 	return user.avatar;
 }
 
+/// @description Get page URL of user
+/// @param {Struct} user User
+///	@return {String}
+function axelchat_user_get_page_url(user)
+{
+	return user.pageUrl;
+}
+
+/// @description Get service bage URL of user
+/// @param {Struct} user User
+///	@return {String}
+function axelchat_user_get_service_badge_url(user)
+{
+	return user.serviceBadge;
+}
+
 /// @description Get nickname text color of user or -1
 /// @param {Struct} user User
 ///	@return {Real}
 function axelchat_user_get_nickname_color(user)
 {
 	var v = user.color;
+	if (string_length(v) == 0)
+	{
+		return -1;
+	}
+	
+	return src_color_utils_hex_to_color(v);
+}
+
+/// @description Get nickname background color of user or -1
+/// @param {Struct} user User
+///	@return {Real}
+function axelchat_user_get_nickname_background_color(user)
+{
+	var v = user.customBackgroundColor;
 	if (string_length(v) == 0)
 	{
 		return -1;
@@ -96,4 +134,26 @@ function axelchat_message_get_contents_as_text(message, image_replacement = "[IM
 function axelchat_message_get_id(message)
 {
 	return message.id;
+}
+
+/// @description Get badges of user as array of URLs
+/// @param {Struct} user User
+///	@return {Array[String]}
+function axelchat_user_get_badges(user)
+{
+	var result = [];
+	
+	for (var i = 0; i < array_length(user.leftBadges); i++)
+	{
+		var badge = user.leftBadges[i];
+		array_push(result, badge);
+	}
+	
+	for (var i = 0; i < array_length(user.rightBadges); i++)
+	{
+		var badge = user.rightBadges[i];
+		array_push(result, badge);
+	}
+	
+	return result;
 }

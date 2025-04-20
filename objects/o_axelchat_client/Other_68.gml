@@ -36,7 +36,14 @@ else if (type_event == network_type_data)
 	}
 	else
 	{
-		src_process_event(event); // We process the received event
+		if (script_exists(on_received))
+		{
+			script_execute(on_received, event); // We process the received event
+		}
+		else
+		{
+			show_debug_message("Script not exists");
+		}
 	}
 	
 	alarm[1] = server_ping_timeout; // If after this time no new data arrives, then the server is already closed
