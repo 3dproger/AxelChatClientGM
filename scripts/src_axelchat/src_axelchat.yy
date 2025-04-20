@@ -6,7 +6,7 @@
   "name":"src_axelchat",
   "parent":{
     "name":"Scripts",
-    "path":"folders/Scripts.yy",
+    "path":"folders/AxelChat/Scripts.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

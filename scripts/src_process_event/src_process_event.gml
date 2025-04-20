@@ -6,7 +6,7 @@ function src_process_event(json)
 	{
 		var text = "Connected to " + json.data.app_name + " " + json.data.app_version;
 		
-		o_display.state_info = text;
+		o_AxelChat_display.state_info = text;
 	}
 	else if (type == "STATES_CHANGED") // событие приходит переодически от AxelChat и содержит информацию о различных состояний
 	{
@@ -30,14 +30,14 @@ function src_process_event(json)
 			}
 		}
 		
-		o_display.state_text = text;
+		o_AxelChat_display.state_text = text;
 	}
 	else if (type == "NEW_MESSAGES_RECEIVED") // событие приходит, когда пришло новое сообщение
 	{
 		for (var i = 0; i < array_length(json.data.messages); i++)
 		{
 			var message = json.data.messages[i];
-			o_display.console_text += parse_message(message) + "\n";
+			o_AxelChat_display.console_text += parse_message(message) + "\n";
 		}
 	}
 	else if (type == "MESSAGES_SELECTED" ||

@@ -325,8 +325,8 @@
   "maintainGms1Font":false,
   "name":"Font1",
   "parent":{
-    "name":"Fonts",
-    "path":"folders/Fonts.yy",
+    "name":"AxelChat using example",
+    "path":"folders/AxelChat using example.yy",
   },
   "pointRounding":0,
   "ranges":[
@@ -342,10 +342,7 @@
   "sdfSpread":8,
   "size":12.0,
   "styleName":"Regular",
-  "textureGroupId":{
-    "name":"Default",
-    "path":"texturegroups/Default",
-  },
+  "textureGroupId":null,
   "TTFName":"",
   "usesSDF":false,
 }

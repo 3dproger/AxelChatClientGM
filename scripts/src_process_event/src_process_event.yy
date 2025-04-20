@@ -6,7 +6,7 @@
   "name":"src_process_event",
   "parent":{
     "name":"Scripts",
-    "path":"folders/Scripts.yy",
+    "path":"folders/AxelChat using example/Scripts.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",
