@@ -18,13 +18,16 @@ function src_process_event(json)
 		{
 			var service = json.data.services[i];
 			
-			text += "\n    [" + service.type_id + "]: ";
+			if (service.enabled)
+			{
+				text += "\n    [" + service.type_id + "]: ";
 			
-			text += "connection_state: " + service.connection_state;
-			text += ", "
-			text += "enabled: " + string(service.enabled);
-			text += ", "
-			text += "viewers: " + string(service.viewers);
+				text += "connection_state: " + service.connection_state;
+				text += ", "
+				text += "enabled: " + string(service.enabled);
+				text += ", "
+				text += "viewers: " + string(service.viewers);
+			}
 		}
 		
 		o_display.state_text = text;
