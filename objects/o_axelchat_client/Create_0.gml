@@ -1,6 +1,7 @@
 connected = false; // The variable stores the state of whether we are connected to server
 socket = -1; // socket id through which we connect to server
 buffer = buffer_create(16384, buffer_grow, 2); // A buffer that is used to send data to the server
+server_ping_timeout = 1000;
 alarm[0] = 10;
 
 /// @description Function to try to connect to the server
@@ -33,8 +34,8 @@ function send_client_info()
 	var message = {
 		data: {
 			client: {
-				name: client_name,
-				version: client_version,
+				name: game_display_name,
+				version: GM_version,
 				type: "MAIN_WEBSOCKETCLIENT",
 				device: {
 					type: "some_device", // TODO: Not implemented
@@ -46,7 +47,7 @@ function send_client_info()
 				}
 			},
 			info: {
-				name: client_extra_name,
+				name: game_project_name,
 				type: "GENERIC"
 			},
 		},

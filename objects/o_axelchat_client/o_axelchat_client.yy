@@ -32,10 +32,6 @@
   "properties":[
     {"$GMObjectProperty":"v1","%Name":"server_address","filters":[],"listItems":[],"multiselect":false,"name":"server_address","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"127.0.0.1","varType":2,},
     {"$GMObjectProperty":"v1","%Name":"server_port","filters":[],"listItems":[],"multiselect":false,"name":"server_port","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"8356","varType":0,},
-    {"$GMObjectProperty":"v1","%Name":"server_ping_timeout","filters":[],"listItems":[],"multiselect":false,"name":"server_ping_timeout","rangeEnabled":false,"rangeMax":10000.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"1000","varType":0,},
-    {"$GMObjectProperty":"v1","%Name":"client_name","filters":[],"listItems":[],"multiselect":false,"name":"client_name","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"game_display_name","varType":4,},
-    {"$GMObjectProperty":"v1","%Name":"client_version","filters":[],"listItems":[],"multiselect":false,"name":"client_version","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"GM_version","varType":4,},
-    {"$GMObjectProperty":"v1","%Name":"client_extra_name","filters":[],"listItems":[],"multiselect":false,"name":"client_extra_name","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"AxelChat client","varType":2,},
     {"$GMObjectProperty":"v1","%Name":"on_connected_script","filters":[
         "GMScript",
       ],"listItems":[],"multiselect":false,"name":"on_connected_script","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resource":{"name":"src_on_axelchat_connected","path":"scripts/src_on_axelchat_connected/src_on_axelchat_connected.yy",},"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"src_on_axelchat_connected","varType":5,},
