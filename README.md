@@ -1,6 +1,8 @@
 # AxelChatClientGM
 GameMaker client for communication with AxelChat via WebSocket
 
+<img src="misc/screenshot1.png">
+
 ## How to add AxelChat to your project
 1. Run this project and AxelChat to make sure it works. Check if connection to AxelChat is happening
 2. Copy group (aka folder) `AxelChat client` with all its contents from this project to your project
