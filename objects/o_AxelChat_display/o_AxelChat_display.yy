@@ -1,16 +1,16 @@
 {
   "$GMObject":"",
-  "%Name":"o_AxelChat_display",
+  "%Name":"o_axelchat_display",
   "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"o_AxelChat_display",
+  "name":"o_axelchat_display",
   "overriddenProperties":[],
   "parent":{
-    "name":"AxelChat using example",
-    "path":"folders/AxelChat using example.yy",
+    "name":"Objects",
+    "path":"folders/AxelChat Client Usage Example/Objects.yy",
   },
   "parentObjectId":null,
   "persistent":false,

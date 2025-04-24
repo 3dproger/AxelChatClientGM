@@ -1,7 +1,7 @@
 /// @description Get author of message
 /// @param {Struct} message Message
 ///	@return {Struct}
-function axelchat_message_get_author(message)
+function src_axelchat_message_get_author(message)
 {
 	return message.author;
 }
@@ -9,7 +9,7 @@ function axelchat_message_get_author(message)
 /// @description Get service id of user
 /// @param {Struct} user User
 ///	@return {String}
-function axelchat_user_get_service_id(user)
+function src_axelchat_user_get_service_id(user)
 {
 	return user.serviceId;
 }
@@ -17,7 +17,7 @@ function axelchat_user_get_service_id(user)
 /// @description Get name of user
 /// @param {Struct} user User
 ///	@return {String}
-function axelchat_user_get_name(user)
+function src_axelchat_user_get_name(user)
 {
 	return user.name;
 }
@@ -25,7 +25,7 @@ function axelchat_user_get_name(user)
 /// @description Get id of user
 /// @param {Struct} user User
 ///	@return {String}
-function axelchat_user_get_id(user)
+function src_axelchat_user_get_id(user)
 {
 	return user.id;
 }
@@ -33,7 +33,7 @@ function axelchat_user_get_id(user)
 /// @description Get avatart URL of user
 /// @param {Struct} user User
 ///	@return {String}
-function axelchat_user_get_avatar_url(user)
+function src_axelchat_user_get_avatar_url(user)
 {
 	return user.avatar;
 }
@@ -41,7 +41,7 @@ function axelchat_user_get_avatar_url(user)
 /// @description Get page URL of user
 /// @param {Struct} user User
 ///	@return {String}
-function axelchat_user_get_page_url(user)
+function src_axelchat_user_get_page_url(user)
 {
 	return user.pageUrl;
 }
@@ -49,7 +49,7 @@ function axelchat_user_get_page_url(user)
 /// @description Get service bage URL of user
 /// @param {Struct} user User
 ///	@return {String}
-function axelchat_user_get_service_badge_url(user)
+function src_axelchat_user_get_service_badge_url(user)
 {
 	return user.serviceBadge;
 }
@@ -57,7 +57,7 @@ function axelchat_user_get_service_badge_url(user)
 /// @description Get nickname text color of user or -1
 /// @param {Struct} user User
 ///	@return {Real}
-function axelchat_user_get_nickname_color(user)
+function src_axelchat_user_get_nickname_color(user)
 {
 	var v = user.color;
 	if (string_length(v) == 0)
@@ -71,7 +71,7 @@ function axelchat_user_get_nickname_color(user)
 /// @description Get nickname background color of user or -1
 /// @param {Struct} user User
 ///	@return {Real}
-function axelchat_user_get_nickname_background_color(user)
+function src_axelchat_user_get_nickname_background_color(user)
 {
 	var v = user.customBackgroundColor;
 	if (string_length(v) == 0)
@@ -88,7 +88,7 @@ function axelchat_user_get_nickname_background_color(user)
 /// @param {Bool} html_print_as_text Need to print the HTML code as text
 /// @param {String} html_replacement Text that will be instead of the HTML in case the printing of the HTML code as text is disabled
 ///	@return {String}
-function axelchat_message_get_contents_as_text(message, image_replacement = "[IMAGE]", html_print_as_text = true, html_replacement = "[HTML]")
+function src_axelchat_message_get_contents_as_text(message, image_replacement = "[IMAGE]", html_print_as_text = true, html_replacement = "[HTML]")
 {
 	var result = "";
 	
@@ -131,7 +131,7 @@ function axelchat_message_get_contents_as_text(message, image_replacement = "[IM
 /// @description Get message id
 /// @param {Struct} message Message
 ///	@return {String}
-function axelchat_message_get_id(message)
+function src_axelchat_message_get_id(message)
 {
 	return message.id;
 }
@@ -139,7 +139,7 @@ function axelchat_message_get_id(message)
 /// @description Get badges of user as array of URLs
 /// @param {Struct} user User
 ///	@return {Array[String]}
-function axelchat_user_get_badges(user)
+function src_axelchat_user_get_badges(user)
 {
 	var result = [];
 	

@@ -105,7 +105,7 @@ function process_event(type, data)
 		}
 		else
 		{
-			show_debug_message("Script for '" + type + "' not exists");
+			show_debug_message("Script 'on_message_received_script' not assigned");
 		}
 	}
 	else if (type == "STATES_CHANGED")
@@ -116,7 +116,7 @@ function process_event(type, data)
 		}
 		else
 		{
-			show_debug_message("Script for '" + type + "' not exists");
+			show_debug_message("Script 'on_state_changed' not assigned");
 		}
 	}
 	else if (type == "HELLO")
@@ -127,7 +127,7 @@ function process_event(type, data)
 		}
 		else
 		{
-			show_debug_message("Script for '" + type + "' not exists");
+			show_debug_message("Script 'on_connected_script' not assigned");
 		}
 	}
 	else if (type == "MESSAGES_SELECTED" ||

@@ -20,5 +20,5 @@ function src_on_axelchat_state_changed(state)
 		}
 	}
 		
-	o_AxelChat_display.state_text = text;
+	o_axelchat_display.state_text = text;
 }

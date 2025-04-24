@@ -2,18 +2,18 @@
   "$GMObject":"",
   "%Name":"o_axelchat_client",
   "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":68,"eventType":7,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":2,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":1,"eventType":2,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":1,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":2,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":1,"eventType":2,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":1,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":68,"eventType":7,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
   "name":"o_axelchat_client",
   "overriddenProperties":[],
   "parent":{
     "name":"Objects",
-    "path":"folders/AxelChat client/Objects.yy",
+    "path":"folders/AxelChat Client/Objects.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -31,7 +31,7 @@
   "physicsStartAwake":true,
   "properties":[
     {"$GMObjectProperty":"v1","%Name":"server_address","filters":[],"listItems":[],"multiselect":false,"name":"server_address","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"127.0.0.1","varType":2,},
-    {"$GMObjectProperty":"v1","%Name":"server_port","filters":[],"listItems":[],"multiselect":false,"name":"server_port","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"8356","varType":0,},
+    {"$GMObjectProperty":"v1","%Name":"server_port","filters":[],"listItems":[],"multiselect":false,"name":"server_port","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"8356","varType":1,},
     {"$GMObjectProperty":"v1","%Name":"on_connected_script","filters":[
         "GMScript",
       ],"listItems":[],"multiselect":false,"name":"on_connected_script","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resource":{"name":"src_on_axelchat_connected","path":"scripts/src_on_axelchat_connected/src_on_axelchat_connected.yy",},"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"src_on_axelchat_connected","varType":5,},

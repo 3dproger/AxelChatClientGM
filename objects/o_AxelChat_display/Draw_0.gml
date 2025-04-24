@@ -1,4 +1,4 @@
-draw_set_font(Font1);
+draw_set_font(font_1);
 draw_set_valign(fa_bottom)
 
 var text = "";
